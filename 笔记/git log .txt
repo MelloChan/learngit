@@ -1,0 +1,4 @@
+查看修改日志
+
+git log --pretty=oneline
+简略查看 附带 提交id 与 -m 内容
