@@ -2,3 +2,8 @@
 当你在本地修改完文件需要上传时,使用 git push -u origin xxx 来推送你的分支.若推送失败,则一般通过git pull合并解决.若合并失败则修改冲突文件,之后再本地提交.一切都没有问题后,就可再次推送了.
 
 备注:如果git pull提示“no tracking information”，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream xxx origin/xxx。
+
+#有一点需要注意的是,当你创建了分支之后,其实这是独属你自身的工作分支.一般情况下在本地分支工作完毕后在合并到本地master,之后再进行推送.
+#再有一点:与人合作时,当你创建了项目仓库,他人若需要提交他的更新文件,请注意:
+1.让他fork一份你的项目，改好了再pull request，你测试没问题后merge。
+2.你在项目settings的Collaborators这里，把他的github账号加入Collaborators。
