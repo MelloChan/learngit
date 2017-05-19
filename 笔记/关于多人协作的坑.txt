@@ -1,0 +1,4 @@
+#git 鼓励多创建分支,因此当你clone一个远程库时,使用 git branch xxx 创建属于自己的分支,这个分支属于开发测试分支.
+当你在本地修改完文件需要上传时,使用 git push -u origin xxx 来推送你的分支.若推送失败,则一般通过git pull合并解决.若合并失败则修改冲突文件,之后再本地提交.一切都没有问题后,就可再次推送了.
+
+备注:如果git pull提示“no tracking information”，则说明本地分支和远程分支的链接关系没有创建，用命令git branch --set-upstream xxx origin/xxx。
